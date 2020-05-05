@@ -1,30 +1,14 @@
-//
-@import 'partials/_variables';
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-
-}
-
-a {
-    text-decoration: none;
-}
-header {
-    background-color: white;
-    text-align: center;
-    .main-menu {
-        list-style: none;
-        li {
-            display: inline-block;
-            a {
-                font-size: 20px;
-                padding: 0 20px;
-                color: $link_color;
-                background-color: cyan;
-            }
-        }
-    }
-}
+/* VARIABLES */
+@import '_variables';
+/* RESET */
+@import '_reset';
+/* MIXINS */
+@import '_mixins';
+/* COMMON */
+@import '_common';
+/* HEADER */
+@import 'partials/_header';
+/* MAIN */
+@import 'partials/_main';
+/* FOOTER */
+@import 'partials/_footer';

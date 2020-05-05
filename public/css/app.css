@@ -1,30 +1,79 @@
+/* VARIABLES */
+
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
+/* MIXINS */
+
+/* COMMON */
+
+/* HEADER */
+
+/* MAIN */
+
+main .cards-list .cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-header {
-  background-color: white;
+main .cards-list .cards .card {
+  flex-basis: calc(100% / 3 - 40px);
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  main .cards-list .cards .card {
+    flex-basis: calc((100% / 2) - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main .cards-list .cards .card {
+    flex-basis: calc((100%) - 40px);
+  }
+}
+
+main .cards-list .cards .card:hover .hover {
+  opacity: 1;
+}
+
+main .cards-list .cards .card:hover img {
+  transform: scale(1.1);
+}
+
+main .cards-list .cards .card img {
+  display: block;
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+main .cards-list .cards .card .hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s linear all;
   text-align: center;
 }
 
-header .main-menu {
-  list-style: none;
+main .cards-list .cards .card .hover a h3 {
+  padding-bottom: 10px;
 }
 
-header .main-menu li {
-  display: inline-block;
+@media screen and (max-width: 600px) {
+  .card {
+    flex-basis: calc((100% / 2) - 40px);
+  }
 }
 
-header .main-menu li a {
-  font-size: 20px;
-  padding: 0 20px;
-  color: black;
-  background-color: cyan;
-}
+/* FOOTER */
 
