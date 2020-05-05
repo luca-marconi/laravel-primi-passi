@@ -147,6 +147,7 @@
      <head>
           <meta charset="utf-8">
           <title>Prodotti</title>
+          <script src="https://kit.fontawesome.com/0deee8bd3c.js" crossorigin="anonymous"></script>
           <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
           <link rel="stylesheet" href="{{asset('css/app.css')}}">
      </head>
@@ -155,7 +156,7 @@
           <main>
               <div class="cards-list">
                    <section>
-                        <h2>Le lunghe</h2>
+                        <h2>LE LUNGHE</h2>
                         <div class="cards">
                             @foreach ($lunghe as $key => $prodotto)
                                 <div class="card">
@@ -172,7 +173,7 @@
                         </div>
                    </section>
                    <section>
-                        <h2>Le corte</h2>
+                        <h2>LE CORTE</h2>
                         <div class="cards">
                             @foreach ($corte as $key => $prodotto)
                                 <div class="card">
@@ -189,7 +190,7 @@
                         </div>
                    </section>
                    <section>
-                        <h2>Le cortissime</h2>
+                        <h2>LE CORTISSIME</h2>
                         <div class="cards">
                             @foreach ($cortissime as $key => $prodotto)
                                 <div class="card">

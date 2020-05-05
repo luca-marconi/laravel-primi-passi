@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+    nav {
+        i {
+            visibility: hidden;
+            @media screen and (max-width: 576px) {
+                    visibility: visible;
+                }
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                padding: 15px 15px;
+                font-size: 30px;
+                &:hover {
+                    background-color: cyan;
+                }
+                @media screen and (max-width: 576px) {
+                        display: none;
+                    }
+            }
+        }
+    }
+}

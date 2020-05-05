@@ -1,5 +1,9 @@
 main {
     .cards-list {
+        h2 {
+            margin-left: 20px;
+            color: navy;
+        }
         .cards {
             display: flex;
             flex-wrap: wrap;
@@ -9,10 +13,10 @@ main {
                 margin: 20px;
                 overflow: hidden;
                 border-radius: 10px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 992px) {
                         flex-basis: calc((100% / 2) - 40px);
                     }
-                @media screen and (max-width: 480px) {
+                @media screen and (max-width: 576px) {
                         flex-basis: calc((100%) - 40px);
                     }
                 &:hover {
