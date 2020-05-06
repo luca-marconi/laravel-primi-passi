@@ -1,0 +1,15 @@
+footer {
+    .info {
+        display: flex;
+        .column {
+            display: flex;
+            flex-basis: calc(100% / 3);
+            justify-content: space-around;
+        }
+    }
+    .background {
+        background-image: url('../../img/footer-montagne-bottom.jpg');
+        height: 150px;
+        background-size: auto;
+    }
+}

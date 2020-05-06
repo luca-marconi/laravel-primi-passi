@@ -123,3 +123,19 @@ main .cards-list .cards .card .hover a h3 {
 
 /* FOOTER */
 
+footer .info {
+  display: flex;
+}
+
+footer .info .column {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  justify-content: space-around;
+}
+
+footer .background {
+  background-image: url(/images/footer-montagne-bottom.jpg?e9536648042f65c22b810770b2a6ca02);
+  height: 150px;
+  background-size: auto;
+}
+
