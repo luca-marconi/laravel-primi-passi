@@ -59,6 +59,10 @@ header nav ul li:hover {
 
 /* MAIN */
 
+main .container.products {
+  background-image: url(/images/fondo-pag-speciali.jpg?2f95c43d2f5c6ce37bf1838709b316a3);
+}
+
 main .cards-list h2 {
   margin-left: 20px;
   color: navy;
@@ -115,12 +119,6 @@ main .cards-list .cards .card .hover {
 
 main .cards-list .cards .card .hover a h3 {
   padding-bottom: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  .card {
-    flex-basis: calc((100% / 2) - 40px);
-  }
 }
 
 /* FOOTER */

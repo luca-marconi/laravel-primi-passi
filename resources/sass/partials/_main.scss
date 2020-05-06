@@ -1,4 +1,7 @@
 main {
+    .container.products {
+    background-image: url('../../img/fondo-pag-speciali.jpg');
+    }
     .cards-list {
         h2 {
             margin-left: 20px;
@@ -50,10 +53,3 @@ main {
         }
     }
 }
-
-
-@media screen and (max-width: 600px) {
-      .card {
-        flex-basis: calc((100% / 2) - 40px);
-      }
-    }

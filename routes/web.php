@@ -22,5 +22,13 @@ Route::get('/', function(){
 })->name('home');
 
 Route::get('/prodotti', function(){
-    return view('index');
+    return view('products');
 })->name('prodotti');
+
+Route::get('/contatti', function(){
+    return view('contatti');
+})->name('contatti');
+
+Route::get('admin/products', function(){
+    return view('admin/products');
+})->name('admin.prodotti');
