@@ -58,6 +58,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
         h3 {
             padding: 30px 0;
             color: $title_descr_color
@@ -68,8 +69,25 @@ main {
         p {
             width: 70%;
             padding-bottom: 50px;
-            color: $title_descr_color
-
+            color: $title_descr_color;
+        }
+        .fa-chevron-left {
+            padding: 20px 10px;
+            font-size: 50px;
+            background-color: #d9eef4;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            color: white;
+        }
+        .fa-chevron-right {
+            padding: 20px 10px;
+            font-size: 50px;
+            position: absolute;
+            background-color: #d9eef4;
+            right: 0;
+            top: 50%;
+            color: white;
         }
     }
 }

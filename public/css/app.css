@@ -133,6 +133,7 @@ main .prodotto {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 main .prodotto h3 {
@@ -148,6 +149,26 @@ main .prodotto p {
   width: 70%;
   padding-bottom: 50px;
   color: #121980;
+}
+
+main .prodotto .fa-chevron-left {
+  padding: 20px 10px;
+  font-size: 50px;
+  background-color: #d9eef4;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: white;
+}
+
+main .prodotto .fa-chevron-right {
+  padding: 20px 10px;
+  font-size: 50px;
+  position: absolute;
+  background-color: #d9eef4;
+  right: 0;
+  top: 50%;
+  color: white;
 }
 
 /* FOOTER */
