@@ -25,6 +25,10 @@ Route::get('/prodotti', function(){
     return view('products');
 })->name('prodotti');
 
+Route::get('/prodotti/{id}', function($id){
+    return view('product', compact('id'));
+})->name('prodotti.show');
+
 Route::get('/contatti', function(){
     return view('contatti');
 })->name('contatti');

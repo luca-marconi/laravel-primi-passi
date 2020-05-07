@@ -5,6 +5,7 @@ header {
             visibility: hidden;
             @media screen and (max-width: 576px) {
                     visibility: visible;
+                    padding: 15px 0;
                 }
         }
         ul {
