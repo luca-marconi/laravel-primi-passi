@@ -14,10 +14,10 @@
 @section('mainContent')
 
     <div class="prodotto">
-        @if ($id == 0)
-            <a href="{{route('prodotti.show', $id = 11)}}"><i class="fas fa-chevron-left"></i></a>
-        @else
+        @if ($id >= 1)
             <a href="{{route('prodotti.show', $id - 1)}}"><i class="fas fa-chevron-left"></i></a>
+        @else
+            <a href="{{route('prodotti.show', count($arrayProdotti) -1)}}"><i class="fas fa-chevron-left"></i></a>
         @endif
         <h3>{{$prodotto['titolo']}}</h3>
         <img src="{{$prodotto['src-h']}}" alt="">
